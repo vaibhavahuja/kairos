@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="script.js"> </script>
+</head>
+<body>
+  <canvas id="myCanvas" style="padding: 0;
+      margin: auto;
+      display: block;
+      width: auto; margin-bottom:40px; margin-top:10px; -webkit-box-shadow: 0px 21px 64px -19px rgba(79,79,79,0.69); text-align:justify;">
+   </canvas>
+<div ng-app="demo">
+
+
+
+<div ng-controller="Hello">
+
+<div class="input-group" style="max-width:60vw; margin:0 auto;">
+   <input type="text" class="form-control" id="link" placeholder="enter the link of the picture you want to analyse.">
+   <span class="input-group-btn">
+        <button ng-click="check1()" class="btn btn-primary" type="button">SUBMIT</button>
+   </span>
+</div>
+<br><br><br>
+<div style="margin:0 auto; border:2px solid #c4c4c4; border-radius:3px; color:gray; margin-bottom:100px; width:40vw; height:260px; padding:17px; overflow-y:scroll; "
+<ul>
+  <li ng-repeat = "x in greeting.images[0].faces">
+    {{x | json}}
+  </li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+</body>
+</html>
